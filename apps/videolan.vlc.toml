@@ -1,0 +1,23 @@
+[package]
+id          = "videolan.vlc"
+name        = "VLC media player"
+version     = "3.0.23"
+description = { en = "Free and open-source cross-platform multimedia player", ko = "자유·오픈소스 크로스플랫폼 멀티미디어 플레이어" }
+homepage    = "https://www.videolan.org/vlc"
+license     = "LGPL-2.1"
+tags        = ["media", "video", "audio", "player"]
+
+[installer]
+url    = "https://mirror.nju.edu.cn/videolan-ftp/vlc/3.0.23/win64/vlc-3.0.23-win64.zip"
+sha256 = "PLACEHOLDER_RUN_glace-pack_fetch"
+arch   = ["x64"]
+type   = "zip"
+
+[portable]
+entry         = "vlc.exe"
+persist_dirs  = ["lua/playlist", "lua/sd"]
+env_overrides = {}
+
+[autoupdate]
+check_url       = "https://download.videolan.org/pub/videolan/vlc/last/win64/"
+version_pattern = 'vlc-([\d.]+)-win64\.zip'

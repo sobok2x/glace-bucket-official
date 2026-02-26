@@ -1,0 +1,11 @@
+# Glace 공식 버킷 메타
+
+name        = "official"
+description = "Glace official curated apps bucket"
+maintainer  = "Glace Team"
+trust_level = "official"
+
+# 버킷 수동/자동 업데이트
+[update]
+auto = true
+check_interval_hours = 6

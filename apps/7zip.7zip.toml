@@ -1,0 +1,23 @@
+[package]
+id          = "7zip.7zip"
+name        = "7-Zip"
+version     = "26.00"
+description = { en = "A free file archiver with a high compression ratio", ko = "고압축률의 무료 파일 압축 프로그램" }
+homepage    = "https://www.7-zip.org"
+license     = "LGPL-2.1"
+tags        = ["utility", "archive", "compression"]
+
+[installer]
+url    = "https://www.7-zip.org/a/7z2600-x64.exe"
+sha256 = "placeholder_update_before_use"
+arch   = ["x64"]
+type   = "exe"
+
+[portable]
+entry        = "7zFM.exe"
+persist_dirs = []
+env_overrides = {}
+
+[autoupdate]
+check_url       = "https://www.7-zip.org/download.html"
+version_pattern = 'Download 7-Zip ([\d.]+)'

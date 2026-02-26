@@ -1,0 +1,23 @@
+[package]
+id          = "notepadplusplus.notepadpp"
+name        = "Notepad++"
+version     = "8.9.1"
+description = { en = "Free source code editor with syntax highlighting", ko = "문법 강조를 지원하는 무료 소스 코드 편집기" }
+homepage    = "https://notepad-plus-plus.org"
+license     = "GPL-2.0"
+tags        = ["editor", "developer", "text"]
+
+[installer]
+url    = "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.1/npp.8.9.1.portable.x64.zip"
+sha256 = "PLACEHOLDER_RUN_glace-pack_fetch"
+arch   = ["x64"]
+type   = "zip"
+
+[portable]
+entry         = "notepad++.exe"
+persist_dirs  = ["plugins/config"]
+env_overrides = {}
+
+[autoupdate]
+check_url       = "https://api.github.com/repos/notepad-plus-plus/notepad-plus-plus/releases/latest"
+version_pattern = '"tag_name":\s*"v([\d.]+)"'

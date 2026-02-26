@@ -1,0 +1,31 @@
+name: Check App Updates
+
+on:
+  schedule:
+    # 매일 오전 6시 (UTC) 실행
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+jobs:
+  check-updates:
+    name: 공식 버킷 앱 버전 확인
+    runs-on: windows-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Rust 캐시 설정
+        uses: Swatinem/rust-cache@v2
+
+      - name: glace-pack 빌드
+        run: cargo build -p glace-pack --release
+
+      - name: 전체 버킷 업데이트 확인
+        run: cargo run -p glace-pack -- check-update --all
+
+      # TODO: 버전 변경 감지 시 자동 PR 생성 로직 추가
+      # (glace-pack check-update 결과를 JSON으로 파싱하여
+      #  변경된 매니페스트가 있으면 git commit + gh PR 생성)
