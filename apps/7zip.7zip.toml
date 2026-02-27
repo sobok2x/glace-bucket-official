@@ -1,3 +1,6 @@
+# 7-Zip 공식 버킷 샘플 매니페스트
+# glace-pack new 명령으로 생성한 형태의 예시
+
 [package]
 id          = "7zip.7zip"
 name        = "7-Zip"
@@ -9,7 +12,7 @@ tags        = ["utility", "archive", "compression"]
 
 [installer]
 url    = "https://www.7-zip.org/a/7z2600-x64.exe"
-sha256 = "placeholder_update_before_use"
+sha256 = "6fe18d5b3080e39678cabfa6cef12cfb25086377389b803a36a3c43236a8a82c"
 arch   = ["x64"]
 type   = "exe"
 

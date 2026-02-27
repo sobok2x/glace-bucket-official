@@ -8,8 +8,8 @@ license     = "LGPL-2.1"
 tags        = ["media", "video", "audio", "player"]
 
 [installer]
-url    = "https://mirror.nju.edu.cn/videolan-ftp/vlc/3.0.23/win64/vlc-3.0.23-win64.zip"
-sha256 = "PLACEHOLDER_RUN_glace-pack_fetch"
+url    = "https://download.videolan.org/pub/videolan/vlc/3.0.23/win64/vlc-3.0.23-win64.zip"
+sha256 = "992d19dbd0b8a7cde9167d2f7780b1ef6f92acc8a71acfa736101a21f35181e1"
 arch   = ["x64"]
 type   = "zip"
 
