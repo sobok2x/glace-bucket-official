@@ -1,0 +1,28 @@
+[package]
+id          = "bandizip.bandisoft"
+name        = "BandiZip"
+version     = "7.40"
+description = { en = "Bandizip is a powerful archiver that provides an ultrafast processing speed and convenient features.", ko = "반디집은 다양한 기능을 제공하고 빠르게 작동하는 압축 프로그램입니다." }
+homepage = "https://kr.bandisoft.com/bandizip/"
+license     = "Advertising-supported software"
+tags        = ["utility", "archive", "compression"]
+
+[installer]
+url    = "https://kr.bandisoft.com/bandizip/dl.php?portable"
+sha256 = "d3fe38f9fd66951c9a7922c8f4cfaca2bac39d1c18511d9477bc89d4628b09f0"
+arch   = ["x86", "x64"]
+type   = "zip"
+
+[portable]
+entry         = { x64 = "Bandizip.x64.exe", x86 = "Bandizip.x86.exe" }
+persist_dirs  = []
+env_overrides = {}
+
+[autoupdate]
+check_url       = "https://kr.bandisoft.com/bandizip/"
+version_pattern = "Latest version: ([\\d.]+)"
+
+[[file_associations]]
+prog_id     = "Bandizip.Archive"
+extensions  = [".zip", ".7z", ".rar", ".tar", ".gz", ".bz2", ".xz", ".cbz", ".cbr"]
+description = "반디집 압축 파일"
