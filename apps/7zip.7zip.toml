@@ -3,12 +3,13 @@
 
 [package]
 id          = "7zip.7zip"
-name        = "7-Zip"
-version     = "26.00"
-description = { en = "A free file archiver with a high compression ratio", ko = "고압축률의 무료 파일 압축 프로그램" }
-homepage    = "https://www.7-zip.org"
-license     = "LGPL-2.1"
-tags        = ["utility", "archive", "compression"]
+name             = { en = "7-Zip", ko = "7-Zip" }
+version          = "26.00"
+description      = { en = "A free file archiver with a high compression ratio", ko = "고압축률의 무료 파일 압축 프로그램" }
+homepage         = "https://www.7-zip.org"
+license          = "LGPL-2.1"
+tags             = ["utility", "archive", "compression"]
+simple_icon_slug = "7zip"
 
 [installer]
 url    = "https://www.7-zip.org/a/7z2600-x64.exe"

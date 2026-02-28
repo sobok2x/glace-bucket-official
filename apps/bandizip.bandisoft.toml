@@ -1,9 +1,9 @@
 [package]
 id          = "bandizip.bandisoft"
-name        = "BandiZip"
+name        = { en = "BandiZip", ko = "반디집" }
 version     = "7.40"
 description = { en = "Bandizip is a powerful archiver that provides an ultrafast processing speed and convenient features.", ko = "반디집은 다양한 기능을 제공하고 빠르게 작동하는 압축 프로그램입니다." }
-homepage = "https://kr.bandisoft.com/bandizip/"
+homepage    = "https://kr.bandisoft.com/bandizip/"
 license     = "Advertising-supported software"
 tags        = ["utility", "archive", "compression"]
 

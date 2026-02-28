@@ -1,11 +1,12 @@
 [package]
 id          = "videolan.vlc"
-name        = "VLC media player"
-version     = "3.0.23"
-description = { en = "Free and open-source cross-platform multimedia player", ko = "자유·오픈소스 크로스플랫폼 멀티미디어 플레이어" }
-homepage    = "https://www.videolan.org/vlc"
-license     = "LGPL-2.1"
-tags        = ["media", "video", "audio", "player"]
+name             = { en = "VLC media player", ko = "VLC 미디어 플레이어" }
+version          = "3.0.23"
+description      = { en = "Free and open-source cross-platform multimedia player", ko = "자유·오픈소스 크로스플랫폼 멀티미디어 플레이어" }
+homepage         = "https://www.videolan.org/vlc"
+license          = "LGPL-2.1"
+tags             = ["media", "video", "audio", "player"]
+simple_icon_slug = "vlcmediaplayer"
 
 [installer]
 url    = "https://download.videolan.org/pub/videolan/vlc/3.0.23/win64/vlc-3.0.23-win64.zip"
