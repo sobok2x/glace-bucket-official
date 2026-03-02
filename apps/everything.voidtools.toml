@@ -2,10 +2,11 @@
 id          = "everything.voidtools"
 name        = { en = "Everything", ko = "Everything" }
 version     = "1.4.1.1032"
-description = { en = "Everything is a fast file search tool for Windows.", ko = "Everything은 Windows용 빠른 파일 검색 도구입니다." }
+description = { en = "Everything is a fastest file search tool for Windows.", ko = "Everything은 Windows용 초고속 파일 검색 도구입니다." }
 homepage    = "https://www.voidtools.com/"
 license     = "Freeware"
 tags        = ["utility", "search"]
+icon_url    = "https://images.sftcdn.net/images/t_app-icon-m/p/d799b3be-96d4-11e6-9fb5-00163ed833e7/1046586710/everything-download-Everything.jpg"
 
 [installer]
 url    = "https://www.voidtools.com/Everything-1.4.1.1032.x64.zip"
