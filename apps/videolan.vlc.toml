@@ -6,7 +6,7 @@ description      = { en = "Free and open-source cross-platform multimedia player
 homepage         = "https://www.videolan.org/vlc"
 license          = "LGPL-2.1"
 tags             = ["media", "video", "audio", "player"]
-simple_icon_slug = "vlcmediaplayer"
+icon_url         = "https://images.videolan.org/images/VLC-IconSmall.png"
 
 [installer]
 url    = "https://download.videolan.org/pub/videolan/vlc/3.0.23/win64/vlc-3.0.23-win64.zip"
@@ -22,3 +22,8 @@ env_overrides = {}
 [autoupdate]
 check_url       = "https://download.videolan.org/pub/videolan/vlc/last/win64/"
 version_pattern = 'vlc-([\d.]+)-win64\.zip'
+
+[[file_associations]]
+prog_id     = "VLC.Media"
+extensions  = [".mp4", ".mkv", ".avi", ".mp3", ".flac", ".wav", ".ogg", ".webm", ".mpeg", ".mpg", ".m4a", ".opus", ".ts", ".vob", ".rmvb"]
+description = "VLC 미디어 파일"
