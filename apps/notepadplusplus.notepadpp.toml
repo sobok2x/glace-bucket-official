@@ -1,6 +1,6 @@
 [package]
 id          = "notepadplusplus.notepadpp"
-name             = { en = "Notepad++", ko = "노트패드++" }
+name             = { en = "Notepad++", ko = "Notepad++" }
 version          = "8.9.1"
 description      = { en = "Free source code editor with syntax highlighting", ko = "문법 강조를 지원하는 무료 소스 코드 편집기" }
 homepage         = "https://notepad-plus-plus.org"
