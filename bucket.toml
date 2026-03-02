@@ -1,7 +1,7 @@
 # Glace 공식 버킷 메타
 
 name        = "official"
-description = "Glace official curated apps bucket"
+description = "Glace 공식 curated 앱 버킷"
 maintainer  = "Glace Team"
 trust_level = "official"
 
