@@ -1,6 +1,3 @@
-# 7-Zip 공식 버킷 샘플 매니페스트
-# glace-pack new 명령으로 생성한 형태의 예시
-
 [package]
 id          = "7zip.7zip"
 name             = { en = "7-Zip", ko = "7-Zip" }
@@ -25,3 +22,8 @@ env_overrides = {}
 [autoupdate]
 check_url       = "https://www.7-zip.org/download.html"
 version_pattern = 'Download 7-Zip ([\d.]+)'
+
+[[file_associations]]
+prog_id     = "7Zip.Archive"
+extensions  = [".zip", ".7z", ".rar", ".tar", ".gz", ".bz2", ".xz", ".cbz", ".cbr"]
+description = "7-Zip 압축 파일"
