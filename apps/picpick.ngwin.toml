@@ -1,0 +1,29 @@
+[package]
+id          = "picpick.ngwin"
+name        = { en = "PicPick", ko = "픽픽" }
+version     = "7.4.1"
+description = { en = "PicPick is a full-featured screen capture tool.", ko = "픽픽은 다양한 기능을 제공하는 화면 캡처 도구입니다." }
+homepage    = "https://picpick.app/"
+license     = "Freeware"
+tags        = ["utility", "screen capture", "image editing"]
+icon_url    = "https://picpick.app/static/logo-74929f92cead79160a18846cfc0e703b.png"
+
+[installer]
+url    = "https://download.picpick.app/7.4.1/picpick_inst_kr.exe"
+sha256 = "a0b9ad172da147a7f0faf8cee71d73ee4dabcd2685d95120c7288387bed7cdb5"
+arch   = ["x64"]
+type   = "exe"
+
+[portable]
+entry         = "picpick.exe"
+persist_dirs  = []
+env_overrides = {}
+
+[autoupdate]
+check_url       = "https://picpick.app/ko/download/"
+version_pattern = "다운로드 v[\\d.]+"
+
+[[file_associations]]
+prog_id     = "PicPick.Image"
+extensions  = [".png", ".jpg", ".jpeg", ".bmp", ".gif", ".tiff"]
+description = "픽픽 이미지 파일"
