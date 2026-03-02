@@ -1,0 +1,23 @@
+[package]
+id          = "burntsushi.ripgrep"
+name        = { en = "ripgrep", ko = "ripgrep" }
+version     = "14.1.1"
+description = { en = "Extremely fast grep alternative that respects .gitignore", ko = ".gitignore를 인식하는 초고속 grep 대체 도구" }
+homepage    = "https://github.com/BurntSushi/ripgrep"
+license     = "Unlicense"
+tags        = ["developer", "search", "cli", "terminal"]
+
+[installer]
+url    = "https://github.com/BurntSushi/ripgrep/releases/download/14.1.1/ripgrep-14.1.1-x86_64-pc-windows-msvc.zip"
+sha256 = "PLACEHOLDER_RUN_glace-pack_fetch"
+arch   = ["x64"]
+type   = "zip"
+
+[portable]
+entry         = "rg.exe"
+persist_dirs  = []
+env_overrides = {}
+
+[autoupdate]
+check_url       = "https://api.github.com/repos/BurntSushi/ripgrep/releases/latest"
+version_pattern = '"tag_name":\s*"([\d.]+)"'
