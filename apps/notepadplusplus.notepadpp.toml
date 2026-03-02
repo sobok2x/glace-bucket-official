@@ -1,6 +1,6 @@
 [package]
 id          = "notepadplusplus.notepadpp"
-name             = { en = "Notepad++", ko = "Notepad++" }
+name             = { en = "Notepad++", ko = "노트패드++" }
 version          = "8.9.1"
 description      = { en = "Free source code editor with syntax highlighting", ko = "문법 강조를 지원하는 무료 소스 코드 편집기" }
 homepage         = "https://notepad-plus-plus.org"
@@ -22,3 +22,8 @@ env_overrides = {}
 [autoupdate]
 check_url       = "https://api.github.com/repos/notepad-plus-plus/notepad-plus-plus/releases/latest"
 version_pattern = '"tag_name":\s*"v([\d.]+)"'
+
+[[file_associations]]
+prog_id     = "NotepadPlusPlus.Document"
+extensions  = [".txt", ".log", ".ini", ".cfg", ".xml", ".json", ".html", ".css", ".js", ".cpp", ".h", ".py", ".java", ".php", ".rb", ".sh", ".bat"]
+description = "Notepad++ 문서 파일"
