@@ -1,0 +1,23 @@
+[package]
+id          = "flowlauncher.flowlauncher"
+name        = { en = "Flow Launcher", ko = "Flow Launcher" }
+version     = "1.19.4"
+description = { en = "Keystroke launcher for Windows with plugin support", ko = "플러그인을 지원하는 Windows 키스트로크 런처" }
+homepage    = "https://www.flowlauncher.com"
+license     = "MIT"
+tags        = ["launcher", "productivity", "search", "developer"]
+
+[installer]
+url    = "https://github.com/Flow-Launcher/Flow.Launcher/releases/download/v1.19.4/Flow.Launcher.Portable.zip"
+sha256 = "PLACEHOLDER_RUN_glace-pack_fetch"
+arch   = ["x64"]
+type   = "zip"
+
+[portable]
+entry         = "Flow Launcher.exe"
+persist_dirs  = ["UserData"]
+env_overrides = {}
+
+[autoupdate]
+check_url       = "https://api.github.com/repos/Flow-Launcher/Flow.Launcher/releases/latest"
+version_pattern = '"tag_name":\s*"v([\d.]+)"'
