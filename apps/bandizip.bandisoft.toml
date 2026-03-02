@@ -14,6 +14,7 @@ arch   = ["x86", "x64"]
 type   = "zip"
 
 [portable]
+# 단일 아카이브 내에 x64/x86 바이너리가 모두 포함되어 있으므로 arch별 entry 지정
 entry         = { x64 = "Bandizip.x64.exe", x86 = "Bandizip.x86.exe" }
 persist_dirs  = []
 env_overrides = {}
@@ -22,6 +23,7 @@ env_overrides = {}
 check_url       = "https://kr.bandisoft.com/bandizip/"
 version_pattern = "Latest version: ([\\d.]+)"
 
+# 파일 연결 설정 — Installed 뷰에서 사용자가 직접 on/off 가능
 [[file_associations]]
 prog_id     = "Bandizip.Archive"
 extensions  = [".zip", ".7z", ".rar", ".tar", ".gz", ".bz2", ".xz", ".cbz", ".cbr"]
