@@ -1,0 +1,29 @@
+[package]
+id          = "icofx.icofx"
+name        = { en = "IcoFX", ko = "IcoFX" }
+version     = "1.6.4"
+description = { en = "IcoFX is a icon and cursor editor.", ko = "IcoFX는 아이콘 및 커서 편집기입니다." }
+homepage    = "https://icofx.ro/"
+license     = "Freeware"
+tags        = ["utility", "icon", "cursor", "editor"]
+icon_url    = "https://cdn2.portableapps.com/IcoFXPortable_128.png"
+
+[installer]
+url    = "https://portableapps.com/redir2/?a=IcoFXPortable&s=s&d=pa&f=IcoFXPortable_1.6.4_Rev_3.paf.exe"
+sha256 = "a17f11c4b02279b43cbde447b5d25b324baa7611156378174b264adc641f2bbf"
+arch   = ["x86", "x64"]
+type   = "exe"
+
+[portable]
+entry         = "IcoFX.exe"
+persist_dirs  = []
+env_overrides = {}
+
+[autoupdate]
+check_url       = "https://portableapps.com/apps/graphics_pictures/icofx_portable"
+version_pattern = 'Version ([\d.]+)'
+
+[[file_associations]]
+prog_id     = "IcoFX.File"
+extensions  = [".ico", ".cur", ".ani"]
+description = "IcoFX 파일"
