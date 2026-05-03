@@ -1,0 +1,29 @@
+[package]
+id          = "libreoffice.libreoffice"
+name        = { en = "LibreOffice", ko = "리브레 오피스" }
+version     = "26.2.1"
+description = { en = "LibreOffice is a free and open-source office suite.", ko = "LibreOffice는 무료 오픈 소스 오피스 제품군입니다." }
+homepage    = "https://www.libreoffice.org/"
+license     = "MPL-2.0"
+tags        = ["office", "productivity", "suite"]
+icon_url    = "https://cdn2.portableapps.com/LibreOfficePortable_128.png"
+
+[installer]
+url    = "https://download.documentfoundation.org/libreoffice/stable/26.2.1/win/x86_64/LibreOffice_26.2.1_Win_x86-64.msi"
+sha256 = "045e03473c5cc2f07bce9fe7709394d84236e744fe08c58407dd18d8eb002e10"
+arch   = ["x86", "x64"]
+type   = "msi"
+
+[portable]
+entry         = "LibreOffice.exe"
+persist_dirs  = []
+env_overrides = {}
+
+[autoupdate]
+check_url       = "https://www.libreoffice.org/download/download-libreoffice/"
+version_pattern = 'LibreOffice ([\d.]+)'
+
+[[file_associations]]
+prog_id     = "LibreOffice.File"
+extensions  = [".odt", ".ods", ".odp", ".odg", ".odf"]
+description = "LibreOffice 파일"
