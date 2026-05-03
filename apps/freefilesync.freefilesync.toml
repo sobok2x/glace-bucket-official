@@ -1,0 +1,29 @@
+[package]
+id          = "freefilesync.freefilesync"
+name        = { en = "FreeFileSync", ko = "FreeFileSync" }
+version     = "14.8"
+description = { en = "FreeFileSync is a folder comparison and synchronization software.", ko = "FreeFileSync는 폴더 비교 및 동기화 소프트웨어입니다." }
+homepage    = "https://freefilesync.org/"
+license     = "Freeware"
+tags        = ["utility", "file", "synchronization"]
+icon_url    = "https://freefilesync.org/images/FreeFileSync.png"
+
+[installer]
+url    = "https://freefilesync.org/download/FreeFileSync_14.8_Windows_Setup.exe"
+sha256 = "17b4152b76b1c3838dd83304b217c80459c37532ef23ff6075f8abe1d7be6af3"
+arch   = ["x86", "x64"]
+type   = "exe"
+
+[portable]
+entry         = "FreeFileSync.exe"
+persist_dirs  = []
+env_overrides = {}
+
+[autoupdate]
+check_url       = "https://freefilesync.org/download.php"
+version_pattern = 'Download FreeFileSync ([\d.]+)'
+
+[[file_associations]]
+prog_id     = "FreeFileSync.File"
+extensions  = [".ffs_batch", ".ffs_gui"]
+description = "FreeFileSync 파일"
